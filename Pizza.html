@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria MammaFormaggio</title>
+</head>
+
+<body background="pizzafundo.png">
+    <h1>Pizzaria MammaFormaggio</h1>
+
+    <div id="Pedido"> </div>
+
+    <script>
+        let Nome_Cliente = prompt ('Qual seu nome?');
+        let saborpizza = prompt ('Qual sabor deseja pedir hoje?');
+        let tamanho_pizza = prompt ('Qual o tamanho da sua pizza? (pequena, normal, ou familia)')
+        let fatias_qtd = prompt ('Em quantos pedaços deseja que sua pizza seja cortada?');
+
+        document.getElementById("Pedido").innerHTML = '<h4> Resumo do pedido </h4> Nome do cliente: ' + Nome_Cliente + '<br> Sabor da pizza: ' + saborpizza + '<br> Tamanho da pizza: ' + tamanho_pizza + '<br> Quantidade de fatias: ' + fatias_qtd;  
+    </script>    
+</body>
+</html>

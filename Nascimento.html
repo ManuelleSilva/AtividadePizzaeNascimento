@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantos anos eu tenho?</title>
+</head>
+<body bgcolor="#961732">
+    <h1>Quantos anos eu tenho?</h1>
+    <div id="Idade"></div>
+        <script>
+            let nome_pessoa = prompt ('Qual é o seu nome?');
+            let nascimento = prompt ('Em que ano você nasceu?');
+            let anoatual = prompt ('Em que ano deseja saber sua idade?');
+
+            IdadeAtual = anoatual - nascimento
+            document.getElementById("Idade").innerHTML = nome_pessoa + ", você tem no ano de " + anoatual + ":" + IdadeAtual + " anos.";
+        </script>    
+</body>
+</html>
